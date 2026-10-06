@@ -1,0 +1,29 @@
+name: Suggest an improvement
+description: Tell us what would help. Ideas need owner approval before joining the roadmap.
+title: "[Idea]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is a public discussion. Do not include names, grades, school URLs, account details or private screenshots. Submitting an idea does not add it to the roadmap.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: Describe the problem without personal or school information.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help?
+      description: A specific example helps us understand the idea.
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Before posting
+      options:
+        - label: I understand this is public and have removed private information.
+          required: true
